@@ -1,10 +1,126 @@
 <%- include('./partials/head') %>
 
-<h2>Students</h2>
+  <main>
+    <section class="container__message">
+      <h3> Messages </h3>
+      <article class="column__message">
+        <img src="./assets/doggy.jpg" </img>
+        <img src="./assets/doggy.jpg" </img>
+        <img src="./assets/doggy.jpg" </img>
+        <img src="./assets/doggy.jpg" </img>
+        <img src="./assets/doggy.jpg" </img>
+      </article>
+    </section>
+
+    <section class="container__filters">
+      <h3> Quick filters </h3>
+      <article class="filter__buttons">
+        <button id="quickfilter__button-1"> Location </button>
+        <button id="quickfilter__button-2"> Age </button>
+        <button id="quickfilter__button-3"> Name Z-A </button>
+        <button id="quickfilter__button-4"> Name A-Z</button>
+      </article>
+    </section>
+
+    <article class="filter__text-change">
+      <h2> Who also live in <em>Amsterdam</em> </h2>
+      <button id="filter__button-general">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="filter">
+          <path
+            d="M2 7h.142a3.981 3.981 0 0 0 7.716 0H30a1 1 0 0 0 0-2H9.858a3.981 3.981 0 0 0-7.716 0H2a1 1 0 0 0 0 2zm4-3a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm24 11h-.142a3.981 3.981 0 0 0-7.716 0H2a1 1 0 0 0 0 2h20.142a3.981 3.981 0 0 0 7.716 0H30a1 1 0 0 0 0-2zm-4 3a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm4 7H19.858a3.981 3.981 0 0 0-7.716 0H2a1 1 0 0 0 0 2h10.142a3.981 3.981 0 0 0 7.716 0H30a1 1 0 0 0 0-2zm-14 3a2 2 0 1 1 2-2 2 2 0 0 1-2 2z">
+          </path>
+        </svg>
+      </button>
+    </article>
+
+    <section class="profile__cards">
+      <article class="profile__card-1">
+        <img src="./public/images/cameradude.jpg"></img>
+        <figcaption> Aisha, 26 </figcaption>
+      </article>
+      <article class="profile__card-2">
+        <img src="./assets/cameradude.jpg"></img>
+        <figcaption> Denise, 24 </figcaption>
+      </article>
+      <article class="profile__card-3">
+        <img src="./assets/cameradude.jpg"></img>
+        <figcaption> Mercedes, 24 </figcaption>
+      </article>
+      <article class="profile__card-4">
+        <img src="./assets/cameradude.jpg"></img>
+        <figcaption> Jenna, 22 </figcaption>
+      </article>
+
+      <button id="button__shuffle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="shuffle">
+          <g data-name="Layer 2">
+            <path
+              d="M18.71 14.29a1 1 0 0 0-1.42 1.42l.29.29H16a4 4 0 0 1 0-8h1.59l-.3.29a1 1 0 0 0 0 1.42A1 1 0 0 0 18 10a1 1 0 0 0 .71-.29l2-2A1 1 0 0 0 21 7a1 1 0 0 0-.29-.71l-2-2a1 1 0 0 0-1.42 1.42l.29.29H16a6 6 0 0 0-5 2.69A6 6 0 0 0 6 6H4a1 1 0 0 0 0 2h2a4 4 0 0 1 0 8H4a1 1 0 0 0 0 2h2a6 6 0 0 0 5-2.69A6 6 0 0 0 16 18h1.59l-.3.29a1 1 0 0 0 0 1.42A1 1 0 0 0 18 20a1 1 0 0 0 .71-.29l2-2A1 1 0 0 0 21 17a1 1 0 0 0-.29-.71z"
+              data-name="shuffle-2"></path>
+          </g>
+        </svg>
+      </button>
+
+    </section>
+
+  </main>
+
+  <nav>
+    <ul>
+      <li>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="house">
+            <rect width="256" height="256" fill="none"></rect>
+            <path
+              d="M218.76367,103.7002,138.75684,30.96436a15.93657,15.93657,0,0,0-21.52637.00146L37.2373,103.69971A16.03108,16.03108,0,0,0,32,115.53857l0,92.09522a16.47275,16.47275,0,0,0,4.01066,10.96174A15.91729,15.91729,0,0,0,48.002,223.999H95.96484a8,8,0,0,0,8-8V167.9917a8,8,0,0,1,8-8h32a8,8,0,0,1,8,8V215.999a8,8,0,0,0,8,8h48.05731a15.40625,15.40625,0,0,0,7.53406-1.85584A16.08415,16.08415,0,0,0,224,207.999v-92.46A16.03567,16.03567,0,0,0,218.76367,103.7002Z">
+            </path>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" id="explore">
+            <path
+              d="M24 21.8c-1.21 0-2.2.99-2.2 2.2s.99 2.2 2.2 2.2a2.2 2.2 0 0 0 0-4.4zM24 4C12.95 4 4 12.95 4 24c0 11.04 8.95 20 20 20s20-8.96 20-20c0-11.05-8.95-20-20-20zm4.38 24.38L12 36l7.62-16.38L36 12l-7.62 16.38z">
+            </path>
+            <path fill="none" d="M0 0h48v48H0z"></path>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="message">
+            <g data-name="Layer 2">
+              <g data-name="message-circle">
+                <rect width="24" height="24" opacity="0"></rect>
+                <path
+                  d="M19.07 4.93a10 10 0 0 0-16.28 11 1.06 1.06 0 0 1 .09.64L2 20.8a1 1 0 0 0 .27.91A1 1 0 0 0 3 22h.2l4.28-.86a1.26 1.26 0 0 1 .64.09 10 10 0 0 0 11-16.28zM8 13a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm4 0a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm4 0a1 1 0 1 1 1-1 1 1 0 0 1-1 1z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="profile">
+            <g data-name="Layer 2">
+              <circle cx="16" cy="6.96" r="6"></circle>
+              <path
+                d="M30.86,26.84a15.07,15.07,0,0,0-4.11-7.47A12.47,12.47,0,0,0,25.13,18,15,15,0,0,0,16,15,15.24,15.24,0,0,0,5.24,19.37a15.07,15.07,0,0,0-4.11,7.47,3.42,3.42,0,0,0,.69,2.88A3.52,3.52,0,0,0,4.58,31H27.42a3.52,3.52,0,0,0,2.75-1.32A3.42,3.42,0,0,0,30.86,26.84Z">
+              </path>
+            </g>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- <h2>Students</h2>
 <ul>
   <% persons.forEach(person => { %>
     <li><a href="./person/<%= person.id %>"><%= person.name %></a>, squad_id <%= person.squad_id %></li>
   <% }) %>
-</ul>
+</ul> -->
 
-<%- include('./partials/foot') %>
+  <%- include('./partials/foot') %>

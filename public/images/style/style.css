@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header {
+    display: grid;
+    place-content: center;
+    color: hsl(338, 60%, 50%);
+    font-size: 75px;
+    font-family: niconne;
+    padding: .3em 0 0 0;
+}
+
+h3 {
+    font-family: "Inter", cursive;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+h2 {
+    font-family: "Inter", cursive;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* MESSAGES SECTION */
+.container__message {
+    padding: 1.5em 1.5em 0 1.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.column__message {
+    display: flex;
+    align-items: center;
+    gap: 1.8em;
+}
+
+.column__message img {
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+/* FILTERS SECTION */
+.container__filters {
+    padding: 1.5em 1.5em 1em 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter__buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.8em;
+}
+
+.filter__buttons button {
+    overflow: hidden;
+    width: 5.8em;
+    height: 1.7em;
+    border-radius: 25px;
+    background-color: #FC8FB6;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.filter__buttons button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    left: -100%;
+    clip-path: polygon(10% 0, 70% 0, 90% 100%, 30% 100%);
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 300ms ease;
+}
+
+.filter__buttons button:hover::after {
+    left: 100%;
+}
+
+
+/* FILTER TEXT CHANGE SECTION */
+.filter__text-change {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em 1.5em 1em 1.5em;
+    gap: 1em;
+}
+
+.filter__text-change button {
+    width: 3em;
+    height: 3em;
+    background-color: transparent;
+    border: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+em {
+    color: #CD356B;
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+/* PROFILE CARDS SECTION */
+.profile__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em 1.5em 0 1.5em;
+    gap: 3em;
+}
+
+.profile__cards img {
+    width: 10em;
+    height: 10em;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.profile__card-1,
+.profile__card-2,
+.profile__card-3,
+.profile__card-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+
+.profile__cards #button__shuffle {
+    width: 4em;
+    height: 4em;
+    background-color: transparent;
+    border: 0;
+    fill: hsl(338, 60%, 50%);
+
+    &:hover {
+        cursor: pointer;
+
+    }
+}
+
+
+/* FOOTER SECTION */
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 1.5em 0 1em 0;
+    background-color: #FC8FB6;
+    border-radius: 25px 25px 0 0;
+}
+
+nav ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.2em;
+    width: 4.2em;
+    background-color: transparent;
+    border: 0;
+    fill: white;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
