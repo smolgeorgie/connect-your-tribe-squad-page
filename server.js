@@ -27,6 +27,8 @@ app.use(express.static('public'))
 // gebruik 'public' map voor stylesheets - express static werkt
 app.use('/public', express.static('public'));
 
+app.use(express.urlencoded({ extended: true }))
+
 
 // Maak een GET route voor de index
 app.get('/', function (request, response) {
